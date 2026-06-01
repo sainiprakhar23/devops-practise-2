@@ -94,8 +94,8 @@ pipeline {
 
                 bat """
                 set KUBECONFIG=%KUBECONFIG%
-                kubectl apply -f deployment.yaml
-                kubectl apply -f service.yaml
+                kubectl apply -f D:/INT-377/question-2/k8s/deployment.yml
+                kubectl apply -f D:/INT-377/question-2/k8s/service.yml
                 kubectl set image deployment/ngnix-deployment-2 nginx=%DOCKER_USER%/%IMAGE_NAME%:%IMAGE_TAG%
                 """
 
